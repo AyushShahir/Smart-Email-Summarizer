@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 12px;
+    width: 420px;
+    /* MAX Chrome allows */
+    height: 520px;
+    background-color: #f5f7fb;
+    box-sizing: border-box;
+}
+
+/* Title */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Output container */
+#output {
+    background: white;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    max-height: 380px;
+    overflow-y: auto;
+
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+
+    white-space: normal;
+    /* KEY CHANGE */
+    word-wrap: break-word;
+    /* prevents narrow wrapping */
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Make bullets cleaner */
+#output li {
+    margin-bottom: 8px;
+}
+
+/* Scrollbar */
+#output::-webkit-scrollbar {
+    width: 6px;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
