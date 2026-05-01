@@ -16,6 +16,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 def summarize():
     data = request.json
     text = data.get("text", "")
+    language = data.get("language", "English")
 
     if not text:
         return jsonify({"summary": "No email content found"}), 400
@@ -29,7 +30,7 @@ def summarize():
     messages=[
         {
             "role": "system",
-            "content": "Summarize the email into 3-4 clear bullet points. Highlight important actions or deadlines. Summarize the email in clean bullet points. Avoid markdown symbols like ** or *. Keep it simple and readable."
+            "content": f"Summarize the email in {language} in 3-4 clear bullet points. Do not use markdown symbols like * or **. Keep it clean and readable."
         },
         {
             "role": "user",
