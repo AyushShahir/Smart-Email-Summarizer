@@ -11,12 +11,16 @@ document.getElementById("summarizeBtn").addEventListener("click", async () => {
         }
 
         try {
+            let language = document.getElementById("language").value;
             let res = await fetch("http://127.0.0.1:5000/summarize", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ text: response.text })
+                body: JSON.stringify({ 
+                    text: response.text,
+                    language: language
+                })
             });
 
             let data = await res.json();

@@ -27,6 +27,21 @@ button {
     margin-bottom: 10px;
 }
 
+/* Dropdown */
+#language {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
 /* Output container */
 #output {
     background: white;
