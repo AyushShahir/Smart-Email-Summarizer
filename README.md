@@ -94,7 +94,6 @@ Replace `your\_groq\_api\_key` with your actual Groq API key.
 
 
 
-> ⚠️ Never commit your `.env` file or expose your API key publicly.
 
 
 
